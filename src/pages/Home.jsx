@@ -1,8 +1,10 @@
 function Home() {
   return (
-    <div>
-      <h1>🏠 Home Page</h1>
-      <p>Welcome to React Single Page Application.</p>
+    <div className="page">
+      <h1>🏠 Home</h1>
+      <p>
+        Welcome to my React Single Page Application.
+      </p>
     </div>
   );
 }

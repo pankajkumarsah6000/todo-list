@@ -11,21 +11,23 @@ function Todo() {
   };
 
   return (
-    <div>
-      <h1>📝 Todo Page</h1>
+    <div className="page">
+      <h1>📝 Todo List</h1>
 
-      <input
-        type="text"
-        placeholder="Enter Task"
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
-      />
+      <div className="todo-input">
+        <input
+          type="text"
+          placeholder="Enter Task..."
+          value={task}
+          onChange={(e) => setTask(e.target.value)}
+        />
 
-      <button onClick={addTask}>Add</button>
+        <button onClick={addTask}>Add</button>
+      </div>
 
       <ul>
         {todos.map((todo, index) => (
-          <li key={index}>{todo}</li>
+          <li key={index}>✅ {todo}</li>
         ))}
       </ul>
     </div>

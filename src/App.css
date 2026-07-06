@@ -1,61 +1,102 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
-.container {
-  width: 400px;
-  margin: 50px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,.2);
+body{
+  background:#f5f7fa;
 }
 
-h1 {
-  text-align: center;
+/* Navbar */
+
+.navbar{
+  background:#2563eb;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:35px;
+  padding:18px;
+  box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
-.input-box {
-  display: flex;
-  gap: 10px;
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:600;
+  transition:.3s;
 }
 
-input {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
+.navbar a:hover{
+  color:#ffd700;
 }
 
-button {
-  padding: 10px 15px;
-  cursor: pointer;
-  border: none;
-  background: royalblue;
-  color: white;
-  border-radius: 5px;
+/* Page */
+
+.page{
+  width:90%;
+  max-width:900px;
+  margin:50px auto;
+  background:white;
+  padding:40px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  text-align:center;
 }
 
-.delete {
-  background: crimson;
+.page h1{
+  color:#2563eb;
+  margin-bottom:20px;
+  font-size:40px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.page p{
+  font-size:20px;
+  color:#555;
+  line-height:30px;
 }
 
-li {
-  margin-top: 15px;
-  display: flex;
-  justify-content: space-between;
-  background: #eee;
-  padding: 10px;
-  border-radius: 5px;
+/* Todo */
+
+.todo-input{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin:25px 0;
 }
 
-.done {
-  text-decoration: line-through;
-  color: green;
+.todo-input input{
+  width:350px;
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:8px;
+  font-size:16px;
+}
+
+.todo-input button{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:12px 20px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.todo-input button:hover{
+  background:#1d4ed8;
+}
+
+ul{
+  list-style:none;
+}
+
+li{
+  background:#f3f4f6;
+  margin:12px auto;
+  width:500px;
+  padding:12px;
+  border-radius:8px;
+  font-size:18px;
 }

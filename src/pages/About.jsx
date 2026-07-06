@@ -1,8 +1,10 @@
 function About() {
   return (
-    <div>
-      <h1>👤 About</h1>
-      <p>This project demonstrates React SPA using React Router.</p>
+    <div className="page">
+      <h1>👨‍💻 About</h1>
+      <p>
+        This project is built using React, React Router and Vite.
+      </p>
     </div>
   );
 }
